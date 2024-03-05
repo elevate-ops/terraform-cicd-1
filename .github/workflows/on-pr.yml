@@ -44,7 +44,7 @@ jobs:
         run: tflint --recursive
 
   trivy:
-    name: Run security checks using trivy
+    name: trivy security checks
     runs-on: ubuntu-latest
     container:
       image: aquasec/trivy:0.49.1
