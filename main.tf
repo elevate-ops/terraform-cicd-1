@@ -24,7 +24,7 @@ resource "fakewebservices_database" "prod_db" {
 resource "aws_instance" "my_web_app" {
   ami = "ami-005e54dee72cc1d00"
 
-  instance_type = "m3.xlarge" # <<<<<<<<<< Try changing this to m5.xlarge to compare the costs
+  instance_type = "m5.xlarge" # <<<<<<<<<< Try changing this to m5.xlarge to compare the costs
 
   tags = {
     Environment = "production"
