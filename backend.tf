@@ -6,7 +6,7 @@ terraform {
 
     workspaces {
       project = "medium-articles"
-      name = "terraform-cicd-1"
+      name    = "terraform-cicd-1"
     }
   }
 
