@@ -1,5 +1,7 @@
 terraform {
   required_providers {
-    fakewebservices = "~> 0.1"
+    fakewebservices = {
+      version = "~> 0.1"
+    }
   }
 }
