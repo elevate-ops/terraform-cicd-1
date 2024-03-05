@@ -7,7 +7,17 @@ on:
 jobs:
 #  terraform-fmt:
 #  terraform-validate:
-#  tflint:
+  tflint:
+    name: tflint checks
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/terraform-linters/tflint:v0.50.3
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: tflint
+          run: tflint
+
   trivy:
     name: Run security checks using trivy
     runs-on: ubuntu-latest
