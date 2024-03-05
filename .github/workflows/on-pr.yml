@@ -22,7 +22,7 @@ jobs:
     container:
       image: hashicorp/terraform:1.7.4
     env:
-      TF_TOKEN_app_terraform_io: ${{ secret.TF_CLOUD_TOKEN }}
+      TF_TOKEN_app_terraform_io: ${{ secrets.TF_CLOUD_TOKEN }}
     steps:
       - uses: actions/checkout@v3
 
@@ -61,7 +61,7 @@ jobs:
     container:
       image: hashicorp/terraform:1.7.4
     env:
-      TF_TOKEN_app_terraform_io: ${{ secret.TF_CLOUD_TOKEN }}
+      TF_TOKEN_app_terraform_io: ${{ secrets.TF_CLOUD_TOKEN }}
     steps:
       - uses: actions/checkout@v3
 
