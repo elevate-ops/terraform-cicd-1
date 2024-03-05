@@ -5,5 +5,4 @@ variable "provider_token" {
 
 provider "fakewebservices" {
   token = var.provider_token
-  version = "0.0.6"
 }
