@@ -1,0 +1,20 @@
+name: Run checks and plan
+
+on:
+  pull_request:
+    branches: ['main']
+
+jobs:
+#  terraform-fmt:
+#  terraform-validate:
+#  tflint:
+  trivy:
+    name: Run security checks using trivy
+    runs-on: ubuntu-latest
+    container:
+      image: aquasec/trivy:0.49.1
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: trivy
+        run: trivy config ./
