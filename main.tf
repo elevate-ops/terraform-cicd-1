@@ -28,7 +28,7 @@ resource "aws_instance" "my_web_app" {
 
   tags = {
     Environment = "production"
-    Service = "web-app"
+    Service     = "web-app"
   }
 
   root_block_device {
@@ -37,11 +37,11 @@ resource "aws_instance" "my_web_app" {
 }
 
 resource "aws_lambda_function" "my_hello_world" {
-  runtime = "nodejs12.x"
-  handler = "exports.test"
-  image_uri = "test"
+  runtime       = "nodejs12.x"
+  handler       = "exports.test"
+  image_uri     = "test"
   function_name = "test"
-  role = "arn:aws:ec2:us-east-1:123123123123:instance/i-1231231231"
+  role          = "arn:aws:ec2:us-east-1:123123123123:instance/i-1231231231"
 
   memory_size = 512
   tags = {
