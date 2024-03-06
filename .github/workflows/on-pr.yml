@@ -9,7 +9,7 @@ jobs:
     name: terraform fmt
     runs-on: ubuntu-latest
     container:
-      image: hashicorp/terraform:1.7.4
+      image: hashicorp/terraform:1.7.3
     steps:
       - uses: actions/checkout@v4
 
