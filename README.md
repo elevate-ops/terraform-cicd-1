@@ -16,3 +16,6 @@ infrastructure provisioning. The following tools/technologies have been used:
 [Infracost](https://github.com/marketplace/actions/infracost-actions) are integrated as [GitHub Apps](https://docs.github.com/en/apps/overview).
 
 The setup will be ideal for startup projects with scarce time and money resources.
+
+** Please note that currently apply fails because aws provider is not configured properly. The failed resources can
+be ignored. They are added only for Infracost demonstration.**
